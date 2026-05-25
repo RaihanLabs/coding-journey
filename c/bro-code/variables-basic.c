@@ -1,14 +1,4 @@
- // Getting Started with C Programming again
- /*
- This is a new practice project to refresh my C programming skills.
- I will be working on various exercises and projects to improve my understanding of the language and its features.
- */
-
- // C is a general-purpose programming language that is widely used for system programming, embedded systems, and application development.
- // It is known for its efficiency and low-level access to memory.
-
-
- #include <stdio.h>
+#include <stdio.h>
     // #include is a preprocessor directive that tells the compiler to include the contents of a specified file in the program.
     // <stdio.h> is a standard library header file that contains declarations for input/output functions, such as printf and scanf.
     // <> is used to include standard library headers, while "" is used to include user-defined headers.
@@ -22,23 +12,6 @@ int main(){
     // main is the entry point of a C program, where the execution starts. It is a special function that must be defined in every C program.
     // () is used to define the parameters of a function. In this case, main does not take any parameters, so it is empty.
     // { } is used to define the body of a function, which contains the statements that will be executed when the function is called.
- 
-
-    printf("Hello World!");
-    // printf is a function that prints text to the console   
-    // () is used to call a function and pass arguments to it
-    // "" is used to denote a string literal in C
-    // "something" is a string literal, which is a sequence of characters enclosed in double quotes
-    // ; is used to end a statement in C
-
-    printf("Let's get started!\n");
-    // \n is a newline charecter that moves the cursor/text to the next line
-
-    printf("Yeah it's working\n");
-    // this is a comment, which is ignored by the compiler and is used to provide explanations or notes in the code   
-
-
-
 
 
     // variables and data types
@@ -75,7 +48,6 @@ int main(){
     // %f is a format specifier that is used to indicate that a floating-point
     printf("My CGPA is %.2f\n", cgpa);
     // .2 indicates that the floating-point number should be printed with 2 decimal places
-
     printf("The temperature is %.1f degrees Celsius\n", temperature);
 
 
@@ -107,7 +79,6 @@ int main(){
     /* Strings in C are represented as arrays of characters, terminated by a null character '\0'. 
     They are not a built-in data type like in other programming languages, but can be created using character arrays.*/
 
-
     char name[] = "Raihan";
     // [] is used to define an array in C. In this case, name is an array of characters that can hold a string.
     /* "Raihan Ahammed" is a string literal, which is a fixed value that is directly written in the code and represents a sequence of characters.
@@ -119,7 +90,6 @@ int main(){
     // name is the variable that holds the string value, which will be printed in the output
 
     char email[] = "raihan@email.com";
-
     printf("My email is %s\n", email);
 
 
@@ -140,18 +110,6 @@ int main(){
     else {
         printf("No, I am not a student.\n");
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
     return 0;
     // return is a statement that ends the execution of a function and optionally returns a value to the caller
