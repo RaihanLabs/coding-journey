@@ -89,7 +89,7 @@ int main(){
     // %s is a format specifier that is used to indicate that a string value will be printed in the output
     // name is the variable that holds the string value, which will be printed in the output
 
-    char email[] = "raihan@email.com";
+    char email[50] = "raihan@email.com"; // 50 is the size of the array, which can hold a string of up to 49 characters (plus the null character)
     printf("My email is %s\n", email);
 
 
