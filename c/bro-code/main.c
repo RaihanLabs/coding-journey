@@ -34,9 +34,9 @@ int main(){
     printf("Let's get started!\n");
     // \n is a newline charecter that moves the cursor/text to the next line
 
-    printf("Yeah it's working\n");
+    printf("Yeah it's working\n\n");
     // this is a comment, which is ignored by the compiler and is used to provide explanations or notes in the code   
-
+    // \n\n two or multiple line break
 
 
 
@@ -63,7 +63,7 @@ int main(){
     printf("I am %d years old\n", age);
     // %d is a format specifier that is used to indicate that an integer value will be printed in the output
     // , is used to separate multiple arguments in a function call
-    printf("I was born in %d\n", year);
+    printf("I was born in %d\n\n", year);
 
 
 
@@ -73,10 +73,10 @@ int main(){
     
     printf("My CGPA is %f\n", cgpa);
     // %f is a format specifier that is used to indicate that a floating-point
-    printf("My CGPA is %.2f\n", cgpa);
+    printf("My CGPA is %.2f\n\n", cgpa);
     // .2 indicates that the floating-point number should be printed with 2 decimal places
 
-    printf("The temperature is %.1f degrees Celsius\n", temperature);
+    printf("The temperature is %.1f degrees Celsius\n\n", temperature);
 
 
 
@@ -86,7 +86,7 @@ int main(){
     
     printf("The value of pi is %.13lf\n",pi);
     // %lf is a format specifier that is used to indicate that a double-precision floating-point number will be printed in the output
-    printf("The value of e is %.11lf\n",e);
+    printf("The value of e is %.11lf\n\n",e);
 
 
 
@@ -120,7 +120,7 @@ int main(){
 
     char email[] = "raihan@email.com";
 
-    printf("My email is %s\n", email);
+    printf("My email is %s\n\n", email);
 
 
 
@@ -138,13 +138,119 @@ int main(){
         printf("Yes, I am a student.\n");
     } 
     else {
-        printf("No, I am not a student.\n");
+        printf("No, I am not a student.\n\n");
     }
 
 
+    // Format Specifiers and Modifiers
+    /*
+      Format Specifiers: format specifiers are special tokens that begin with a % symbol followed by a character,
+      that specifies the data type and optional modifiers(eg. width, precision, flags, etc.).
+      They control how data is formatted and displayed or interpreted in the output.
+      Some common format specifiers include:
+      %d for integers
+      %f for floating-point numbers
+      %lf for double-precision floating-point numbers.
+      %c for characters
+      %s for strings
+    */
+
+    int quantity = 1;
+    float price_rise = 2.668;
+    double price = 20.24545993245;
+    char currency = '$';
+    char product[] = "Alu";
+
+    printf("The price of %dkg %s is %.8lf%c and it has risen by %.2f%c\n\n\n",quantity, product, price, currency, price_rise, currency);
+
+    int num1 = 2;
+    int num2 = -30;
+    float num3 = 400.36798;
+    double num4 = -5000.643218364635343;
+
+    // width : minimum number of character to be printed.
+    printf("Num1: %5d\n", num1); // 5d means 5 spaces before the number(right align)
+    printf("Num2: %5d\n", num2);
+    printf("Num3: %5f\n", num3);
+    printf("Num4: %5lf\n\n", num4);
+
+    printf("Num1: %-5d\n", num1); // -5d means 5 spaces after the number(left align)
+    printf("Num2: %-5d\n", num2);
+    printf("Num3: %-5f\n", num3);
+    printf("Num4: %-5lf\n\n", num4);
+    
+    // flags : +  show the sign before the number
+    printf("Num1: %-+5d\n", num1); // +5d show the sign before the number
+    printf("Num2: %-+5d\n", num2); // -+5d : left align and show sign
+    printf("Num3: %-+5f\n", num3);
+    printf("Num4: %-+5lf\n\n", num4);
+
+    printf("Num1: %+05d\n", num1); // 0d   : preced with zeros instead of spaces
+    printf("Num2: %+05d\n", num2); // +05d : 5 spaces, show sing, preced zeros
+    printf("Num3: %+05f\n", num3);
+    printf("Num4: %+05lf\n\n", num4);
+
+    // Precision : .2f means 2 decimal places for floating-point numbers
+    printf("Num1: %-+05d\n", num1);
+    printf("Num2: %-+05d\n", num2);
+    printf("Num3: %-+05.3f\n", num3);  // -+05.3f : left align, show sign, preced zero, 5 space, 3 decimal points
+    printf("Num4: %-+05.12lf\n\n", num4);
 
 
 
+    // Arithmetic Operators: =, +, -, *, /, %, ++, --
+
+    // = is the assignment operator, which assigns the value on the right to the variable on the left
+    // + is the addition operator, which adds two operands
+    // - is the subtraction operator, which subtracts the right operand from the left operand
+    // * is the multiplication operator, which multiplies two operands
+    // / is the division operator, which divides the left operand by the right operand
+    // % is the modulus operator, which returns the remainder of the division of the left operand by the right operand
+    // ++ is the increment operator, which increases the value of a variable by 1
+    // -- is the decrement operator, which decreases the value of a variable by 1
+
+    int a1 = 2;
+    int a2 = 3;
+    int s1 = 1;
+    int s2 = 4;
+    int m1 = 2;
+    int m2 = 3;
+    float d1 = 10;
+    float d2 = 3;
+    float z = 0;
+
+    z = a1 + a2; // addition
+    printf("Addition: %f\n", z);
+
+    z= s1 - s2; // subtraction
+    printf("Subtraction: %f\n", z);
+
+    z = m1 * m2; // multiplication
+    printf("Multiplication: %f\n", z);
+
+    z = d1 / d2; // division
+    printf("Division: %f\n", z);
+
+    z = a1 % a2; // modulus(remainder of division)
+    printf("Modulus: %f\n", z); // modulus operator is only applicable for integer operands
+
+    a1++; // increment
+    printf("Increment: %d\n", a1);
+
+    s1--; // decrement
+    printf("Decrement: %d\n", s1);
+
+    a2 = a2 + 3; // addition assignment operator or a2 += 3;
+    printf("Addition Assignment: %d\n", a2);
+
+    a1 -= 2; // subtraction assignment operator or a1 = a1 - 2;
+    printf("Subtraction Assignment: %d\n", a1);
+
+    m2 *= 4; // multiplication assignment operator or m2 = m2 * 4;
+    printf("Multiplication Assignment: %d\n", m2);
+
+    d1 = d1 / 2; // division assignment operator or d1 /= 2;
+    printf("Division Assignment: %f\n", d1);
 
 
 

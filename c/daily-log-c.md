@@ -14,7 +14,7 @@ Learned:
 
 - return type of the main function: int main(){}
 - entry point of a C program : main()
-- function that prints text or values to the console: printf();
+- display output or print: printf();
 
 ## 04:00 pm -- Variables
 Learned:
@@ -27,4 +27,15 @@ Learned:
   char[] :array of characters
   bool   :boolean value (true/false)
 
-## 09:00 pm -- Format Specifier  
+## 09:00 pm -- Format Specifier
+learned:
+- width
+- precision
+- flag
+
+
+
+------------
+# 2026-05-26
+
+## 
