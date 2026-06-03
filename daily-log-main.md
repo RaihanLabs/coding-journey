@@ -13,7 +13,8 @@
 - ls/dir    :list folders & files
 - mkdir     :create directory
 - touch     :create empty file
-- mv        :move or rename folder & file
+- mv/ren        :rename folder & file
+- mv/move   :move folder & file
 - cp        :copy-paste
 - rm        :delete file
 - rm -ri    :delete folder
