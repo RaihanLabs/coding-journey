@@ -258,10 +258,10 @@
     
     // User Input
 
-    int age = 0;             // set default value to 0 to avoid garbage value
-    float cgpa = 0.0;         // 0.0 or 0.0f can be used for float initialization
-    char grade = '\0';       // '\0' is the null character, used to indicate an empty char
-    char name[10] = {'\0'};   // {'\0'} or "" initializes the first element to null character, and the rest will be automatically initialized to '\0'
+    int age1 = 0;             // set default value to 0 to avoid garbage value
+    float cgpa1 = 0.0;         // 0.0 or 0.0f can be used for float initialization
+    char grade1 = '\0';       // '\0' is the null character, used to indicate an empty char
+    char name1[10] = {'\0'};   // {'\0'} or "" initializes the first element to null character, and the rest will be automatically initialized to '\0'
     char full_name[20] = "";
     // set default values to avoid garbage values
 
@@ -269,16 +269,16 @@
 
     // user input is taken using scanf("%",&); function. The format specifier % is used to read value, and
     // & is used to pass the address of the variable to store the input value.
-    scanf(" %d", &age); // scanf is used to take input from the user. It reads a value from the user and stores it in the variable.
+    scanf(" %d", &age1); // scanf is used to take input from the user. It reads a value from the user and stores it in the variable.
 
     printf("Enter your CGPA: ");
-    scanf(" %f", &cgpa); // %.2f is used to read a float value with 2 decimal places
+    scanf(" %f", &cgpa1); // %.2f is used to read a float value with 2 decimal places
     
     // input buffer issue: when we read a number (like age or cgpa) using scanf, it leaves a newline character in the input buffer.
     // So when we read a character (like grade) using scanf("%c"), it reads that leftover newline character instead of waiting for user input.
     // To fix this, we can add a space before %c in scanf to skip any whitespace characters (including the newline).
     printf("Enter your grade: ");
-    scanf(" %c", &grade);
+    scanf(" %c", &grade1);
     
     printf("Enter your name: ");
     scanf(" %6s", name); // %5s is used to read a string with a maximum width of 5 characters. This prevents buffer overflow by ensuring that no more than 4 characters are read (plus the null terminator).
@@ -299,16 +299,16 @@
     // full_name[strcspn(full_name, "\n")] = '\0'; is another way to remove the newline character, but it seems to be not working in this case. It should work in general, so there might be some issue with how it's being used.
     printf("\n");   // line gap
 
-    printf("So you are %d years old.\n", age);
-    printf("Your CGPA is: %.2f\n", cgpa);
-    printf("Your grade is: %c\n", grade);
+    printf("So you are %d years old.\n", age1);
+    printf("Your CGPA is: %.2f\n", cgpa1);
+    printf("Your grade is: %c\n", grade1);
     printf("Your full name is: %s\n", full_name);
     
     // new line is included in full_name because fgets() reads the newline character when the user presses Enter. 
     // To remove the newline character, we can replace it with a null terminator.
     // full_name[strcspn(full_name, "\n")] = '\0'; its not working for some reason.
 
-    printf("Your name is: %s\n", name);
+    printf("Your name is: %s\n", name1);
 
 
 
