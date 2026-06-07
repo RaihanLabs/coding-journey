@@ -32,7 +32,7 @@ int main(){
 
     printf("Enter your Mother's Name: ");
     fgets(mother_name, sizeof(mother_name), stdin);
-    mother_name[strcspn(mother_name, "\n")] = '\0';
+    mother_name[strlen(mother_name) - 1] = '\0';
 
     printf("Enter your Age: ");
     scanf("%d", &age);
@@ -57,7 +57,7 @@ int main(){
     
     printf("Enter your Permanent Address: ");
     fgets(permanent_address, sizeof(permanent_address), stdin);
-    permanent_address[strcspn(permanent_address, "\n")] = '\0';
+    permanent_address[strlen(permanent_address) - 1] = '\0';
 
     printf("Enter your School Name: ");
     fgets(school, sizeof(school), stdin);
