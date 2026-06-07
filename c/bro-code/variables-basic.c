@@ -3,7 +3,7 @@
     // <stdio.h> is a standard library header file that contains declarations for input/output functions, such as printf and scanf.
     // <> is used to include standard library headers, while "" is used to include user-defined headers.
  
- #include <stdbool.h>
+#include <stdbool.h>
     // <stdbool.h> is a standard library header file that contains definitions for the boolean data type and its values (true and false).
 
 
